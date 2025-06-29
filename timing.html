@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>javascript Alert        </title>
+
+    </head>
+    <body>
+       5452 <h1> javascript Timing </h1>
+        <p id="res"> </p>
+        <p id="res1"> </p>
+        <button type="button" onclick="myvar=setTimeout(myFun,3000)">start</button>
+        <button type="button" onclick="clearTimeout(myvar)">stop</button>
+
+        <script>
+           function myFun()
+           {
+            alert("Hello")
+           }
+           function myTime()
+           {
+            const d=new Date();
+            document.getElementById("res").innerHTML=d.toLocaleTimeString();
+            
+           }
+           setInterval(myTime,1000);
+         
+
+             
+        </script>
+    </body>
+</html>

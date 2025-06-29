@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>javascript Alert        </title>
+
+    </head>
+    <body>
+        <h1> javascript loops </h1>
+        <p id="res"> </p>
+        <p id="res1"> </p>
+
+        <script>
+            // using for loop
+           // let num="";
+            //for(let i=1;i<=10;i++)
+            //{
+             // num += "The number is =" + i + "<br>";
+           // }
+            const student=["Ajay","Vijay","Bina","Amit","shaym"]
+            let str="";
+           // for(let i=0;i<student.length;i++)
+           // {
+            //                  str += student[i] + "<br>";
+//
+           // }
+           // using for of loop
+           for(let x of student)
+           {
+               str += x + "<br>";
+           }
+        
+            document.getElementById("res").innerHTML=str;
+            //using for in loop
+            const person={firstname:"Ram",lastName:"kumar",Age:45,height:6.2};
+            let txt="";
+            for(let x in person)
+            {
+              txt += person[x];                      
+            }
+             
+            document.getElementById("res1").innerHTML=txt;
+             
+        </script>
+    </body>
+</html>

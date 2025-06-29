@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>javascript Alert        </title>
+
+    </head>
+    <body>
+       5452 <h1> javascript popup </h1>
+        <p id="res"> </p>
+        <p id="res1"> </p>
+        <button type="button" onclick="onclick">newWin</button>
+        <button type="button" onclick="onclick">prompt</button>
+
+        <script>
+            //alert("Hello")
+            function newWin()
+            {
+                let str;
+                if(confirm("click a button!"))
+                {
+                    str="You clicked ok!";
+                                document.getElementById("res").innerHTML=str;
+
+                }
+                else
+                {
+                                        str="You clicked cancel!";
+                                      document.getElementById("res1").innerHTML=str;
+
+
+                }
+            }
+
+             function goback()
+            {
+                let str;
+                let name=prompt("Enter your Firstname","Ajay");
+                if(name==null||name=="")
+                {
+                    str="user cancel the prompt";
+                                document.getElementById("res").innerHTML=str;
+
+                }
+                else
+                {
+                                        str="Hello" + nme + "Welcome in my page!";
+                                      document.getElementById("res1").innerHTML=str;
+
+
+                }
+            }
+
+
+             
+        </script>
+    </body>
+</html>

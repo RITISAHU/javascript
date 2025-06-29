@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>javascript Function       </title>
+
+    </head>
+    <body>
+        <h1> this is about javascript function </h1>
+        <p> this is about javascript output </p>
+        <p id="res"> </p>
+       
+
+        <script> 
+            function myProduct(x,y)
+            {
+                return x*y;
+            }
+            let x=myProduct(8,6);
+            document.getElementById("res").innerHTML=x;
+
+            function toCelsius(f)
+            {
+                return (5/9)*(f+32);
+            }
+            let y=toCelsius(98.4);
+            document.getElementById("res").innerHTML=y;
+          
+
+        </script>
+    </body>
+</html>

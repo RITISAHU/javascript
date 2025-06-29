@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>javascript Array     </title>
+
+    </head>
+    <body>
+        <h1> javascript Array </h1>
+        <p> this is about javascript output </p>
+        <p id="res"> </p>
+                <p id="res1"> </p>
+
+        <script> 
+            
+           const student=["ashok","meena", "rajesh","suresh","rajat"];
+          // const studentF=student.slice(1,2);
+          // student.splice(2,0,"seema", "geeta");
+           //student[4]="shyam";
+                     // student.push("Ram");
+                                       //    student.pop("Ram");
+
+
+        let str="<ol>";
+            student.forEach(myFun);
+            str+="</ol>";
+            function myFun(value)
+            {
+                str+="<li>" + value + "</li>";
+            }
+            //document.getElementById("res").innerHTML=str;
+                     //   document.getElementById("res").innerHTML=studentF.join("-");
+                        student.sort();
+                                                document.getElementById("res1").innerHTML=student.join("-");
+
+
+
+        </script>
+    </body>
+</html>

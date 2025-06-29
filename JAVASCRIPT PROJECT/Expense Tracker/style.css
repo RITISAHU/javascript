@@ -1,0 +1,62 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#expense-list li {
+  padding: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 5px;
+  border-left: 5px solid #007bff;
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 100%;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>javascript     </title>
+
+    </head>
+    <body>
+        <h1> Regular Expresion </h1>
+        <p id="res"> </p>
+        <p id="res1"> </p>
+
+        <script>
+         let str="I am learning javascript and regular expresion and string  4561323";
+         //let n=str.search("learning");
+           //       let n=str.search("/learning/i");
+                    let n=str.match(/\d/g);
+
+
+            document.getElementById("res1").innerHTML=n;
+             
+        </script>
+    </body>
+</html>
